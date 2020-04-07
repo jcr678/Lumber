@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils import timezone
 import datetime
-# Create your models here. LATER THIS IS THE DATABASE
+
 class Person(models.Model):
     #column name=datatype
     email = models.CharField(max_length=200)
@@ -9,12 +9,13 @@ class Person(models.Model):
     isemployee = models.BooleanField(default=False)
     startemploymentweeks = models.IntegerField()
     endemploymentweeks = models.IntegerField()
-    matches =
+    matches =models.ForeignKey('self', on_delete=models.CASCADE, related_name='matched')
     messages=models.TextField()
-    profile_pic=
+    #profile_pic=
     Jobtype=models.TextField()
-    swipesinterestedinme=models.ForeignKey(Person, on_delete=models.CASCADE)
-    swipesiminterestedin=models.ForeignKey(Person, on_delete=models.CASCADE)
+    swipesinterestedinme=models.ForeignKey('self',
+    on_delete=models.CASCADE, related_name='me')
+    swipesiminterestedin=models.ForeignKey('self', on_delete=models.CASCADE, related_name='them')
     availabilemonday=models.BooleanField(default=False)
     availabiletuesday=models.BooleanField(default=False)
     availabilewednesay=models.BooleanField(default=False)
@@ -22,8 +23,8 @@ class Person(models.Model):
     availabilefriday=models.BooleanField(default=False)
     availabilesaturday=models.BooleanField(default=False)
     availabilesunday=models.BooleanField(default=False)
-    resume=
-    coverpage=
+    #resume=
+    #coverpage=
     introduction=models.TextField()
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
