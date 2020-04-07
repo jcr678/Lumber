@@ -3,9 +3,11 @@ from django.utils import timezone
 import datetime
 
 
+#interect with database through shell
+#python3 manage.py shell
 
-#CREATES NEW DATABASE IF/WHEN WE START OVER
-
+#CREATE NEW DATABASE IF/WHEN WE START OVER
+#terminal:
 
 #rm -f tmp.db db.sqlite3
 #rm -r app/migrations
@@ -19,13 +21,13 @@ class Person(models.Model):
     isemployee = models.BooleanField(default=False)
     startemploymentweeks = models.IntegerField()
     endemploymentweeks = models.IntegerField()
-    matches =models.ForeignKey('self', on_delete=models.CASCADE, related_name='matched')
+    matches =models.ForeignKey('Person', on_delete=models.CASCADE, related_name='matched')
     messages=models.TextField()
     #profile_pic=
     Jobtype=models.TextField()
-    swipesinterestedinme=models.ForeignKey('self',
+    swipesinterestedinme=models.ForeignKey('Person',
     on_delete=models.CASCADE, related_name='me')
-    swipesiminterestedin=models.ForeignKey('self', on_delete=models.CASCADE, related_name='them')
+    swipesiminterestedin=models.ForeignKey('Person', on_delete=models.CASCADE, related_name='them')
     availabilemonday=models.BooleanField(default=False)
     availabiletuesday=models.BooleanField(default=False)
     availabilewednesay=models.BooleanField(default=False)
@@ -35,9 +37,6 @@ class Person(models.Model):
     availabilesunday=models.BooleanField(default=False)
     #resume=
     #coverpage=
-    introduction=models.TextField()
-    question_text = models.CharField(max_length=200)
-    pub_date = models.DateTimeField('date published')
 
     #change value displayed for Queries
     def __str__(self):
