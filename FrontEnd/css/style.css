@@ -57,11 +57,12 @@ body{
 }
 
 button{
+  background-color: #16d67d;
   width: 40%;
   margin: 5px 0 25px;
 }
 
-.btn{
+.btn {
   background-color: #16d67d;
   color: #fff;
   font-size: 19px;
@@ -84,6 +85,6 @@ button{
   padding: 2px;
 }
 
-.forgot a{
+.forgot a {
   color: #c2fbfe;
 }
