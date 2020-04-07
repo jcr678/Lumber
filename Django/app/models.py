@@ -29,4 +29,5 @@ class Person(models.Model):
     pub_date = models.DateTimeField('date published')
 
     #change value displayed for Queries
-    #def __str__(self):
+    def __str__(self):
+        return self.email
