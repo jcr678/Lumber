@@ -2,8 +2,18 @@ from django.db import models
 from django.utils import timezone
 import datetime
 
+
+
+#CREATES NEW DATABASE IF/WHEN WE START OVER
+
+
+#rm -f tmp.db db.sqlite3
+#rm -r app/migrations
+#python manage.py makemigrations app
+#python manage.py migrate
 class Person(models.Model):
     #column name=datatype
+
     email = models.CharField(max_length=200)
     password = models.CharField(max_length=200)
     isemployee = models.BooleanField(default=False)
