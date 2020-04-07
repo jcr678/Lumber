@@ -15,3 +15,20 @@
   .left-text {
     float: left;
   }
+
+  body {
+    background-color: beige;
+    padding-bottom: 25px;
+  }
+
+  .btn {
+    background-color: #16d67d;
+    width: 100px; 
+    margin: 10px;
+    
+  }
+
+  html {
+    position: relative;
+    min-height: 100%;
+}

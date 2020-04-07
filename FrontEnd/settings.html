@@ -1,23 +1,28 @@
+<!--
+
 <!DOCTYPE HTML>
 
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/swipe.css">
+  <link rel="stylesheet" href="css/swipe.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
 
+<body>
   <p>Settings takes you to a page where you can change<br>
     Employer or Employee<br>Work Type<br>Duration low value<br>
     Duration high value (so like low months to high months)
     <br><br><br>https://getbootstrap.com/docs/4.0/components/dropdowns/
     <br><br><br>
     <br><br><br> Settings is linked to when you create a new account or click settings button in swipe.html.</p>
-    <button type="button" class="btn btn-outline-success" onclick="location.href = 'swipe.html';">Go Back to Jobs</button>
-    <button type="button" class="btn btn-outline-success" onclick="location.href = 'index.html';">Log out</button>
-</head>
+  <button type="button" class="btn btn-outline-success" onclick="location.href = 'swipe.html';">Go Back to Jobs</button>
+  <button type="button" class="btn btn-outline-success" onclick="location.href = 'index.html';">Log out</button>
+</body>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
@@ -25,4 +30,119 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
   integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </script>
+
+</html>
+
+-->
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Lumber</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/components/dropdowns/">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="css/settings.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/lumberlogo.png" type="img/lumberlogo.png">
+</head>
+
+<body>
+  <div class="modal-dialog text-center">
+    <div class="col=sm-8 main-section">
+      <div class="modal-content">
+
+        <div class="col-12 user-img">
+          <img src="img/lumberlogo.png" alt="">
+        </div>
+
+        <div class="dropdown-show">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Job Title
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Employee</a>
+            <a class="dropdown-item" href="#">Employer</a>
+          </div>
+        </div>
+
+        <div class="dropdown-show">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Industry
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+
+        <div class="dropdown-show">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Work Duration
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">0-1 Month</a>
+            <a class="dropdown-item" href="#">2-3 Months</a>
+            <a class="dropdown-item" href="#">3-4 Months</a>
+            <a class="dropdown-item" href="#">5-6 Months</a>
+          </div>
+        </div>
+
+        <div class="dropdown-show">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Agriculture</a>
+            <a class="dropdown-item" href="#">Education</a>
+            <a class="dropdown-item" href="#">Engineering (Software, Electrical, Mechanical)</a>
+            <a class="dropdown-item" href="#">Entertainment</a>
+            <a class="dropdown-item" href="#">Finance</a>
+            <a class="dropdown-item" href="#">Healthcare</a>
+            <a class="dropdown-item" href="#">Hospatality</a>
+            <a class="dropdown-item" href="#">Legal Services</a>
+            <a class="dropdown-item" href="#">Manufacturing</a>
+            <a class="dropdown-item" href="#">Transportation</a>
+            <a class="dropdown-item" href="#">Other</a>
+          </div>
+        </div>
+
+        <div class="dropdown-show">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
 </html>
