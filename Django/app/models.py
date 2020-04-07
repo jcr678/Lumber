@@ -28,6 +28,5 @@ class Person(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
 
-    #change value displayed for Question.objects.all()
-    def __str__(self):
-        return self.question_text +
+    #change value displayed for Queries
+    #def __str__(self):
