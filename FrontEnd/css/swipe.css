@@ -15,3 +15,13 @@
   .left-text {
     float: left;
   }
+
+  body {
+    padding-bottom: 25px;
+  }
+
+  html {
+    position: relative;
+    min-height: 100%;
+}
+

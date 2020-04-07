@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body{
+  background-color: beige;
   font-family: 'Roboto', sans-serif;
   background-size: cover;
 }
@@ -14,7 +15,7 @@ body{
 .modal-content{
   background-color: #3b4652;
   opacty: .95;
-  padding: 0 18px;
+  padding: 20px 25px;
   box-shadow: 0px 0px 3px #848484;
 }
 .user-img{
@@ -61,17 +62,17 @@ button{
 }
 
 .btn{
-  background-color: #27C2A5;
+  background-color: #16d67d;
   color: #fff;
   font-size: 19px;
   padding: 7px 14px;
   border-radius: 5px;
-  border-bottom: 4px solid #219882;
+  border-bottom: 4px solid #16d67d;
 }
 
 .btn:hover, .btn:focus {
-  background-color: #25a890!important;
-  border-bottom: 4px solid #25a890!important;
+  background-color: #219882!important;
+  border-bottom: 4px solid #219882 !important;
 }
 
 .svg-inline--fa{
@@ -80,7 +81,7 @@ button{
 }
 
 .forgot{
-  padding: 5px 0 25px;
+  padding: 2px;
 }
 
 .forgot a{
