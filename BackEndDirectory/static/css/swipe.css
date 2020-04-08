@@ -1,0 +1,17 @@
+.carousel {
+    text-align: center;
+    width: 80%;
+    overflow: hidden;
+    float: right;
+  }
+
+  .carousel .carousel-inner {
+    height: 80%;
+    text-align: center;
+    float: right;
+
+  }
+
+  .left-text {
+    float: left;
+  }
