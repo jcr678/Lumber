@@ -13,9 +13,10 @@ body{
 }
 
 .modal-content{
+  float: center;
   background-color: #3b4652;
-  opacty: .95;
-  padding: 20px 25px;
+  opacity: .95;
+  padding: 30px 50px;
   box-shadow: 0px 0px 3px #848484;
 }
 .user-img{
@@ -58,10 +59,12 @@ body{
 
 button{
   width: 40%;
-  margin: 5px 0 25px;
+  margin: 5px 5px;
 }
 
 .btn{
+  width: 200px; 
+  margin: 5px 5px;
   background-color: #16d67d;
   color: #fff;
   font-size: 19px;
@@ -90,4 +93,8 @@ button{
 
 .dropdown-show {
     padding: 10px;
+}
+
+.dropdown-item {
+  width: 100px;
 }
