@@ -111,7 +111,7 @@ $(".carousel").on("touchstart", function (event) {
             $('.carousel').carousel('pause');
         }
         else if (Math.floor(xClick - xMove) < -5) {
-            $(this).carousel('prev');
+            $(this).carousel('next');
             $('.carousel').carousel('pause');
         }
     });
