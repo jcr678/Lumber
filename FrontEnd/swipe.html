@@ -95,4 +95,61 @@
   onclick="location.href = 'index.html';">Logout</button>
 
 </body>
+<script src=”jquery.mobile.custom.min.js”></script>
+<script type="text/javascript" src="../sources/js/jquery.min.js"></script>
+<script type="text/javascript" src="../sources/js/bootstrap.min.js"></script>
+<script>
+(function ($) {
+// Mobile swipe if more than 5 pixels moved/*
+$('.carousel').carousel('pause');
+$(".carousel").on("touchstart", function (event) {
+    var xClick = event.originalEvent.touches[0].pageX;
+    $(this).one("touchmove", function (event) {
+        var xMove = event.originalEvent.touches[0].pageX;
+        if (Math.floor(xClick - xMove) > 5) {
+            $(this).carousel('next');
+            $('.carousel').carousel('pause');
+        }
+        else if (Math.floor(xClick - xMove) < -5) {
+            $(this).carousel('prev');
+            $('.carousel').carousel('pause');
+        }
+    });
+    $(".carousel").on("touchend", function () {
+        $(this).off("touchmove");
+    });
+});
+$('.carousel').carousel('pause');
+// Mouse swipe when mouse is dragged to left/right
+var xClick;
+var mouseDown;
+$('.carousel').carousel('pause');
+$(".carousel").on("mousedown", function (event) {
+    $('.carousel').carousel('pause');
+    xClick = event.pageX;
+    mouseDown = true;
+    $('.carousel').carousel('pause');
+});
+$('.carousel').carousel('pause');
+$(".carousel").on("mousemove", function (event) {
+    if (mouseDown) {
+        var xMove = event.pageX;
+        if (xClick > xMove) {
+            $(this).carousel('next');
+            $('.carousel').carousel('pause');
+        }
+        else if (xClick < xMove) {
+            $(this).carousel('next');
+            $('.carousel').carousel('pause');
+        }
+    }
+  });
+$('.carousel').carousel('pause');
+$(".carousel").on("mouseup", function (event) {
+  $('.carousel').carousel('pause');
+  mouseDown = false;
+  $('.carousel').carousel('pause');
+});
+})(jQuery);
+    </script>
 </html>
